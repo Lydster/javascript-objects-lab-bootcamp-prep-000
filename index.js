@@ -9,9 +9,14 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 }
 
 function deleteFromObjectByKey(object, key) {
-  return Object.assign({}, object);
+  Object.assign({}, object);
+  delete object.key;
 }
 
 function destructivelyDeleteFromObjectByKey(object, key) {
   return delete object.key;
 }
+
+var q = {age:10, 'profile.contry': 'india'};
+var duplicateQ = Object.assign({}, q);
+delete duplicateQ['profile.contry'];
