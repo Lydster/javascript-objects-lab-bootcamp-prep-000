@@ -17,6 +17,6 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   return delete object.key;
 }
 
-var q = {age:10, 'profile.contry': 'india'};
-var duplicateQ = Object.assign({}, q);
-delete duplicateQ['profile.contry'];
+//var q = {age:10, 'profile.contry': 'india'};
+//var duplicateQ = Object.assign({}, q);
+//delete duplicateQ['profile.contry'];
